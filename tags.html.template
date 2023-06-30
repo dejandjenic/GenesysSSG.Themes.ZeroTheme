@@ -1,0 +1,66 @@
+<table>
+   <tr>
+      <td>GA:</td>
+      <td>{{GA}}</td>
+   </tr>
+
+   <tr>
+      <td>title: </td>
+      <td>{{ configuration.title }}</td>
+   </tr>
+
+   <tr>
+      <td>subdirectory: </td>
+      <td>{{subdirectory}}</td>
+   </tr>
+
+   <tr>
+      <td>navigation: </td>
+      <td>{{ navigation }}</td>
+   </tr>
+
+   <tr>
+      <td>blogsByTag: </td>
+      <td>
+          {% for blogByTag in blogsByTag %}
+			   <hr />
+            {{ blogByTag.tag }}
+            {{ blogByTag.tag }}
+            {{ blogByTag.items.size }}
+			{% endfor %}
+      </td>
+   </tr>
+
+   <tr>
+      <td>configuration.tel</td>
+      <td>{{ configuration.tel }}</td>
+   </tr>
+
+     <tr>
+      <td>configuration.email</td>
+      <td>{{ configuration.email }}</td>
+   </tr>
+
+     <tr>
+      <td>configuration.facebook</td>
+      <td>{{ configuration.facebook }}</td>
+   </tr>
+
+    <tr>
+      <td>configuration.twitter</td>
+      <td>{{ configuration.twitter }}</td>
+   </tr>
+
+    <tr>
+      <td>footernavigation</td>
+      <td>{{ footernavigation }}</td>
+   </tr>
+
+
+   <tr>
+      <td>Year</td>
+      <td>{{ Year }}</td>
+   </tr>
+
+</table>
+
